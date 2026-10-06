@@ -1,0 +1,52 @@
+name: Bug report
+description: Report a reproducible problem in the Nexasis AI public beta
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for testing Nexasis AI. Do not include API keys, passwords, tokens, private documents, or other sensitive data."
+  - type: input
+    id: version
+    attributes:
+      label: Nexasis AI version
+      placeholder: "1.0.1"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, browser, Docker version, and Ollama version
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model
+      description: Ollama or external model involved, if applicable
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs or screenshots
+      description: Remove secrets, private content, credentials, and personal information.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed secrets, credentials, private documents, and sensitive information from this report.
+          required: true
