@@ -1,0 +1,35 @@
+name: Beta feedback
+description: Tell us what you liked, disliked, or found confusing
+title: "[Feedback]: "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: "Real usage feedback helps decide what Nexasis AI should improve next."
+  - type: textarea
+    id: liked
+    attributes:
+      label: What did you like?
+    validations:
+      required: true
+  - type: textarea
+    id: improve
+    attributes:
+      label: What should be improved?
+    validations:
+      required: true
+  - type: textarea
+    id: usage
+    attributes:
+      label: How are you using Nexasis AI?
+      description: Please avoid sharing confidential or sensitive information.
+  - type: dropdown
+    id: recommend
+    attributes:
+      label: Would you recommend Nexasis AI to another local-AI user?
+      options:
+        - "Yes"
+        - "Maybe"
+        - "No"
+    validations:
+      required: true
