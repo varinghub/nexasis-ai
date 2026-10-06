@@ -1,0 +1,37 @@
+name: Feature request
+description: Suggest an improvement or new capability for Nexasis AI
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the workflow or limitation rather than only the proposed feature.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: What would you like Nexasis AI to do?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or examples
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Chat / UI
+        - Ollama / Models
+        - RAG / Documents
+        - Attachments / Projects
+        - Analytics
+        - External Providers
+        - Docker / Deployment
+        - Other
+    validations:
+      required: true
